@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DuPlessis Design Contact</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+	<link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+	<!-- Navigation -->
+	<nav id="navbarNav" class="nav-main">
+		<!-- Toggle -->
+		<input id="toggleBox" type="checkbox">
+		<!-- Logo -->
+		<img class="logo-image" src="https://cdn.glitch.com/1bb4b24d-fa5e-4a45-83da-35856b06c64c%2FlogoDD.png?v=1607686061089" alt="logo">
+		<!-- Bar to hide list sliding up -->
+		<div id="hideSlide"></div>
+		<!-- Menu List -->
+		<ul id="menuList" class="menu-list">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="tools.html">Tools</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		<!-- Menu Toggle -->
+		<div class="menu-btn">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</div>
+	</nav>
+	<div class="container-fluid p-0 m-0">
+		<!-- Greeting/Intro -->
+		<div id="introBg" class="jumbotron w-100 m-0 contact">
+			<div class="col-sm">
+				<h1 class="display-4">Get in Touch</h1>
+				<p class="lead">
+					“Be the change that you wish to see in the world.”<br />
+					―Mahatma Gandhi
+				</p>
+			</div>
+		</div>
+		<!-- Contact -->
+		<div class="container-fluid py-4 m-0 contact-bg">
+				<form id="formContact">
+						<!-- First Name -->
+						<div class="form-group">
+							<label for="fname">First Name</label>
+							<input class="form-control" type="text" id="fname" name="firstname">
+						</div>
+						<!-- Last Name -->
+						<div class="form-group">
+							<label for="lname">Last Name</label>
+							<input class="form-control" type="text" id="lname" name="lastname">
+						</div>
+						<!-- Email -->
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input class="form-control" type="text" id="email" name="email">
+							<small id="emailHelp" class="form-text text-muted">Your privacy is important.</small>
+						</div>
+						<!-- Message -->
+						<div class="form-group">
+							<label for="subject">Subject</label>
+    					<textarea class="form-control" id="subjectMessage" rows="3"></textarea>
+						</div>
+						<!-- Submit -->
+						<div class="form-group">
+							<input class="btn btn-contact" type="submit" value="Submit">
+						</div>
+				</form>
+		</div>
+		<!-- Last -->
+		<footer class="bg-dark navbar navbar-dark d-flex flex-row justify-content-end">
+			<div class="d-flex flex-row justify-content-around align-items-center navbar-nav">
+				<!-- Author -->
+				<span class="text-light">DuPlessis Works &#169;2020</span>
+				<!--Facebook-->
+				<button type="button" class="btn btn-fb">
+					<i class="fab fa-facebook-f"></i>
+				</button>
+				<!--Github-->
+				<button type="button" class="btn btn-git">
+					<i class="fab fa-github"></i>
+				</button>
+				<!--Instagram-->
+				<button type="button" class="btn btn-ins">
+					<i class="fab fa-instagram"></i>
+				</button>
+			</div>
+		</footer>
+	</div>
+	<!-- partial -->
+	<script src="contactScript.js"></script>
+  <script src="nav.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+</body>
+
+</html>
