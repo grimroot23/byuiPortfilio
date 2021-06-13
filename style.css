@@ -324,5 +324,7 @@ form .form-group input[type="submit"]:hover {
 /*==================================================*/
 /*||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
-
+#subject-container div {
+padding-right: 2.7em !important;
+}
 
