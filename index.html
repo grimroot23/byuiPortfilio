@@ -154,6 +154,16 @@
 		</footer>
 	</div>
 	<!-- partial -->
+	<script>
+		var introBg = document.getElementById('introBg');
+		var bgChangeSize = window.matchMedia('(max-width: 650px)');
+		var imgContent = document.getElementById('img-content');
+		var firstImgContainer = imgContent.childNodes[1];
+		var firstImage = firstImgContainer.children[0];
+		var lastImgContainer = imgContent.childNodes[3];
+		var lastImage = lastImgContainer.children[0];
+		var whileColumn = window.matchMedia('(min-width: 768px)');
+	</script>
 	<script src="script.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
