@@ -1,6 +1,4 @@
 //================ Index ==================================
-var introBg = document.getElementById('introBg');
-
 function bgSize(z) {
 	if (z.matches) {
 		introBg.style.backgroundSize = 'cover';
@@ -10,17 +8,7 @@ function bgSize(z) {
 	}
 }
 
-var bgChangeSize = window.matchMedia('(max-width: 650px)');
 bgChangeSize.addListener(bgSize);
-
-// imgContent = parentNode, parentElement
-// Solved by console.log(parentNode.childNodes);
-
-var imgContent = document.getElementById('img-content');
-var firstImgContainer = imgContent.childNodes[1];
-var firstImage = firstImgContainer.children[0];
-var lastImgContainer = imgContent.childNodes[3];
-var lastImage = lastImgContainer.children[0];
 
 function rowCol(z) {
   if (z.matches) {
@@ -44,23 +32,15 @@ function firstImgMarg(b) {
   }
 }
 
-var whileColumn = window.matchMedia('(min-width: 768px)');
 whileColumn.addListener(firstImgMarg);
 
 firstImgMarg(whileColumn);
-
 //================ End of Index ===============================
 
 //---------------------------------------------------------------------------
 //---------------------------------------------------------------------------
 
 //================ Tools ======================================
-var subjectContainer = document.getElementById('subject-container');
-
-var subBootstrap = subjectContainer.childNodes[3];
-var subJquery = subjectContainer.childNodes[7];
-var subFontAwesome = subjectContainer.childNodes[11];
-
 function colRow(b) {
   if (b.matches) {
 		subBootstrap.classList.add('col');
@@ -84,7 +64,6 @@ function colRow(b) {
   }
 }
 
-var smallToolDevice = window.matchMedia('(max-width: 685px)');
 smallToolDevice.addListener(colRow);
 
 colRow(smallToolDevice);
